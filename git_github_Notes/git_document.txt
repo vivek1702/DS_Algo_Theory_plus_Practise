@@ -1,0 +1,75 @@
+git --version    "to check git installed version"
+git init         "to initialized git empty repository"
+git status       "to check work directory & staging area status"
+git log          " displays all commit of particular branch"
+git ls-files     "list of all files in staging area"
+
+
+
+git add "file name"             /"add single file or all working directory file in staging area"
+git add .                       /"explaination as above all file added"
+git commit -m "New message"     /"Create new commit
+git checkout "commit_id"        /"to check particular commit"
+
+
+git branch "branch name"
+    or                          /"Create new branch"
+git switch "branch name"
+
+git checkout "branch name"      /"check specific branch"
+
+git checkout -b "branch name"
+    or                          /"create & switch specific branch"
+git switch -c "branch name" 
+
+git merge "branch name"         /"it merge other branch to master or current branch"
+
+
+
+working directory 
+
+git rm file name    
+git add file name      /"command after file was delete from working directory"
+
+unstaged changes 
+
+git checkout(--) .
+git restore filename or .  /"revert changes in track file"
+
+git clean -df               /"df stands for delete force and these delete untracked files"
+
+
+staged changes
+
+
+git reset filename &
+git checkout --filename
+git restore --staged filename or .            /"remove file from staging area"
+
+
+undo latest commit
+
+git reset head~1
+git reset --soft head~1
+git reset --hard head~1
+
+
+git branch -D branchname /"delete branches
+
+git stash /"temproray storage og ustaged uncommited changes
+
+git reflog /"the log of all changes made induded deleted data
+
+git merge /"combining commiting different branches by creating a new merge commit or by moving the head fast-forward
+
+git rebase /"change the base (i.e parent commit) of commits in another branch.
+
+git cherry-pick /"copy commit including the changes made only in this commit by head to another branch
+
+git push -u origin "branch name"     /"this will push the code to repository and create a local tracking branch
+
+to push command from local repository to remote repository  "git remote add origin "url""
+
+to track local tracking branch git branch --track branchname origin/branchname
+
+git push/pull origin branch
