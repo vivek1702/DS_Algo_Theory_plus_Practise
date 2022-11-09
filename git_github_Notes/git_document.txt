@@ -73,3 +73,7 @@ to push command from local repository to remote repository  "git remote add orig
 to track local tracking branch git branch --track branchname origin/branchname
 
 git push/pull origin branch
+
+git fetch origin      /" it update the remote tracking branch
+
+git branch -a     /"it shows all the remote and local branch
