@@ -77,3 +77,7 @@ git push/pull origin branch
 git fetch origin      /" it update the remote tracking branch
 
 git branch -a     /"it shows all the remote and local branch
+
+
+/* next lecture is how to track local tracking branch*/
+Example:  git branch --track  "remote branch name/local branch name"
